@@ -50,12 +50,12 @@ header {
   align-items: center;
 }
 
-.logo img {
+.hero .logo img {
   height: 1.5rem;
   padding: 1rem 1rem 1rem 2rem;
 }
 
-.logo span {
+.hero .logo span {
   font-family: Helvetica;
   font-size: 1rem;
   color: #fff;
@@ -70,6 +70,10 @@ nav span a {
   color: #fff;
   text-decoration: none;
   padding: 0 2rem;
+}
+
+#nav-mobile {
+  display: none;
 }
 
 .tagline {
@@ -145,4 +149,137 @@ footer .logo span {
   font-family: Helvetica;
   font-size: 1rem;
   color: black;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1090px) {
+
+  .hero .container {
+    margin-top: 0;
+  }
+
+  .hero {
+    background-position: 20%;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .tagline {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .tagline h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .logo span {
+    display: none;
+  }
+
+  .benefit-item {
+    padding-right: 3rem;
+  }
+
+  .hero {
+    height: 22rem;
+  }
+
+  .tagline {
+    margin-top: 13rem;
+  }
+
+}
+
+@media only screen and (max-width: 564px) {
+
+  .hero {
+    height: 17rem;
+  }
+
+  .tagline {
+    margin-top: 9rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #nav-mobile {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .tagline {
+    margin-top: 9rem;
+    display: block;
+    width: 100%;
+  }
+
+  .tagline h1 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .benefits.flex.flex-center {
+    margin: 3.77rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit-item {
+    padding-right: 0;
+  }
+
+  .benefit-item span {
+    font-size: 0.77rem;
+    font-family: Helvetica;
+    padding: 1.54rem;
+  }
+
+  .business-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .business-item span {
+    padding-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  .business-item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .business-item h2 {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  footer .logo span {
+    display: none;
+  }
+
+  footer .logo img {
+    padding: 4rem;
+  }
+
+  footer .logo {
+    display: block;
+    text-align: center;
+  }
+
 }
